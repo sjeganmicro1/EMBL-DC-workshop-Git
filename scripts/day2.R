@@ -135,3 +135,33 @@ mean(heights, na.rm = T)
 # "NA, NA, TRUE
 is.na(heights)
 str(heights)
+
+
+#identify which are the misisng data (a.k.a NA)
+is.na(heights)
+
+# omit the missing and NA data code is na.omit
+na.omit()
+
+#Challenege
+heights = c(63, 69, 60,55, NA, 68, 61, 70, 61, 59, 64, 69, 63,6)
+str(heights)
+median(heights)
+heights = na.omit(heights)
+heights
+median(heights)
+mean(heights)
+length(heights)
+heights[heights > 67]
+greaterthan67=heights [heights > 67]
+greaterthan67
+length(greaterthan67)
+mean(greaterthan67)
+median(greaterthan67)
+
+heights = c(63, 69, 60,55, NA, 68, 61, 70, 61, 59, 64, 69, 63,6)
+heights_no_na= na.omit(heights)
+heights_no_na = heights[!is.na(heights)]
+median(heights, na.rm = T)
+heights_no_na
+sum(heights_no_na > 67)
