@@ -50,5 +50,56 @@ roundoff
 my_function = function (x) {
   x = x+2
 }
-my_results = my_functions
-}
+my_result = my_function (3)
+my_result
+View(my_function)
+
+
+weight_g = c(50, 60, 65,82)
+animals = c("mouse", "rat", "tiger", "lion")
+#get the lenght of the values
+length(animals)
+length(weight_g)
+
+#get the type of data contained in the vector
+class(animals)
+class(weight_g)
+
+#structure (str) of the object to see the length
+
+str(animals)
+str(weight_g)
+
+#how to add an element values in the data to begining of a vector
+animals = c("cincilla", animals)
+animals
+animals = c(animals, "frog")
+animals <- c(animals, "frog")
+animals
+
+str(animals)
+
+weight_g
+weight_g = c ("34", "44", weight_g)
+weight_g
+
+typeof(weight_g)
+class(animals)
+animals
+str(animals)
+
+# what happen in the next cases
+
+num_char = c(1, 2, 3, "a")
+num_char
+
+typeof(num_char)
+
+num_logical = c(1, 2, 3, TRUE)
+num_logical
+char_logical = c ("a", "b", "c", TRUE)
+char_logical
+trucky = c(1, 2, 3, "4")
+
+#logical = numeric = character
+#logical = character
