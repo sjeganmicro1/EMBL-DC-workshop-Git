@@ -103,3 +103,35 @@ trucky = c(1, 2, 3, "4")
 
 #logical = numeric = character
 #logical = character
+
+#subsetting a vector
+animals[2]
+animals[c(1, 2)]
+#c for subseeting add more
+more_animals = animals[c(1, 2, 3, 2, 1, 4)]
+more_animals
+
+weight_g
+weight_g[3]
+weight_g[c(FALSE, FALSE, TRUE, TRUE)]
+weight_g = 63
+weight_g[weight_g > 63]
+weight_g[c(F, FALSE, T, TRUE)]
+weight_g[c(F, FALSE, T, TRUE,FALSE, T, TRUE)]
+
+weight_g[weight_g > 63 & weight_g > 80]
+weight_g[weight_g > 63 | weight_g > 80]
+
+#<, >, ==, !=, <=, >=, ! is not logical
+
+weight_g[weight_g > 63 & weight_g == 80]
+weight_g[weight_g >= 50]
+weight_g==65
+animals[animals == "rat" | animals == "frog"]
+
+heights = c(2, 4, 4, NA, 6)
+mean(heights)
+mean(heights, na.rm = T)
+# "NA, NA, TRUE
+is.na(heights)
+str(heights)
