@@ -1,1 +1,1 @@
-syncing the files with R
+syncing the Rfiles with git-hub
